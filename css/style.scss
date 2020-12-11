@@ -1,0 +1,197 @@
+body {background-image: url(../img/fondclair3.png);
+    background-attachment: fixed;
+    background-size: cover;
+    image-rendering: pixelated;}
+
+#maison {position: absolute;
+    bottom: 73px;
+    background-image: url(../img/maison.png);
+    background-size: cover;
+    height: 170px;
+    width: 300px;
+    background-repeat: no-repeat;
+    image-rendering: pixelated;
+    z-index: 1;}
+
+#arbre {position: absolute;
+    bottom: 74px;
+    right: 0px;
+    margin: 0;
+    background-image: url(../img/arbre.png);
+    background-size: cover;
+    height: 210px;
+    width: 110px;
+    background-repeat: no-repeat;
+    image-rendering: pixelated;
+    z-index: 4;}
+
+/*#cadre {    position: absolute;
+    z-index: 800;
+    width: 100%;
+    bottom: 43px;
+    border-bottom: solid 2px #5FA619;}*/
+
+.haut {text-align: center;
+    color: white;
+    z-index: 10;
+    width: 100%;
+    background-color: #343A40;
+    border-bottom: solid 5px #1E2124;
+    margin-bottom: 10px;}
+    
+
+.menu {    text-align: center;
+    position: absolute;
+    bottom: 0px;
+    z-index: 10;
+    width: 100%;
+    background-color: #343A40;
+    border-bottom: solid 5px #1E2124;
+    border-top: solid 2px #5FA619}
+
+.contenu {margin-top: 10px;
+//    background-color: #343A40;
+ //   border-bottom: solid 5px #1E2124;
+    width: 90%;
+    color: white;
+    margin: auto;
+ //   border-top: solid 1px #1E2124;
+  //  border-left: solid 1px #1E2124;
+ //   border-right: solid 1px #1E2124;
+p,h2,h3 {margin: 10px;
+}
+p {margin:10px 20px;
+}}
+.contenu img {margin: 10px;}
+
+.form-control {    display: inline-block;
+    width: auto;
+    background-color: #343A40;
+    border: 0;
+    color: white;
+    width: 100px;
+    text-align: center;}
+.form-control:focus {    display: inline-block;
+        width: auto;
+        background-color: #1d2124;
+        box-shadow: 0 0 0 0 rgba(0,123,255,.25);
+        border: 0;
+        color: white;}
+
+
+#d0, #d1, #d2, #d3, #d4 {position: relative;z-index: 2;}
+#d1, #d2, #d3, #d4 {
+display: none;}
+
+
+
+.container {background-color: white;
+    min-height: 100vh;
+
+.row div {border: solid 10px white;
+background-color: gray;
+color: white;
+text-align: center;
+
+}
+
+}
+
+
+.condition,.condition-obs{background:url(../img/condition.png) no-repeat;}
+.condition-averses-de-neige-faible-big-png{background-position:-816px 0;height:125px;width:125px}
+.condition-averses-de-neige-faible-png{background-position:-816px -784px;height:45px;width:45px}
+.condition-averses-de-pluie-faible-big-png{background-position:-680px -680px;height:125px;width:125px}
+.condition-averses-de-pluie-faible-png{background-position:-928px -728px;height:45px;width:45px}
+.condition-averses-de-pluie-forte-big-png{background-position:-544px -680px;height:125px;width:125px}
+.condition-averses-de-pluie-forte-png{background-position:-872px -728px;height:45px;width:45px}
+.condition-averses-de-pluie-moderee-big-png{background-position:-408px -680px;height:125px;width:125px}
+.condition-averses-de-pluie-moderee-png{background-position:-816px -728px;height:45px;width:45px}
+.condition-brouillard-big-png{background-position:-272px -680px;height:125px;width:125px}
+.condition-brouillard-png{background-position:-928px -672px;height:45px;width:45px}
+.condition-ciel-voile-big-png{background-position:-136px -680px;height:125px;width:125px}
+.condition-ciel-voile-png{background-position:-872px -672px;height:45px;width:45px}
+.condition-couvert-avec-averses-big-png{background-position:0 -680px;height:125px;width:125px}
+.condition-couvert-avec-averses-png{background-position:-816px -672px;height:45px;width:45px}
+.condition-developpement-nuageux-big-png{background-position:-680px -544px;height:125px;width:125px}
+.condition-developpement-nuageux-png{background-position:-928px -616px;height:45px;width:45px}
+.condition-eclaircies-big-png{background-position:-544px -544px;height:125px;width:125px}
+.condition-eclaircies-png{background-position:-872px -616px;height:45px;width:45px}
+.condition-ensoleille-big-png{background-position:-408px -544px;height:125px;width:125px}
+.condition-ensoleille-png{background-position:-816px -616px;height:45px;width:45px}
+.condition-faiblement-nuageux-big-png{background-position:-272px -544px;height:125px;width:125px}
+.condition-faiblement-nuageux-png{background-position:-928px -560px;height:45px;width:45px}
+.condition-faiblement-orageux-big-png{background-position:-136px -544px;height:125px;width:125px}
+.condition-faiblement-orageux-png{background-position:-872px -560px;height:45px;width:45px}
+.condition-faibles-passages-nuageux-big-png{background-position:0 -544px;height:125px;width:125px}
+.condition-faibles-passages-nuageux-png{background-position:-816px -560px;height:45px;width:45px}
+.condition-fortement-nuageux-big-png{background-position:-680px -408px;height:125px;width:125px}
+.condition-fortement-nuageux-png{background-position:-928px -504px;height:45px;width:45px}
+.condition-fortement-orageux-big-png{background-position:-544px -408px;height:125px;width:125px}
+.condition-fortement-orageux-png{background-position:-872px -504px;height:45px;width:45px}
+.condition-neige-faible-big-png{background-position:-408px -408px;height:125px;width:125px}
+.condition-neige-faible-png{background-position:-816px -504px;height:45px;width:45px}
+.condition-neige-forte-big-png{background-position:-272px -408px;height:125px;width:125px}
+.condition-neige-forte-png{background-position:-928px -448px;height:45px;width:45px}
+.condition-neige-moderee-big-png{background-position:-136px -408px;height:125px;width:125px}
+.condition-neige-moderee-png{background-position:-872px -448px;height:45px;width:45px}
+.condition-nuit-avec-averses-big-png{background-position:0 -408px;height:125px;width:125px}
+.condition-nuit-avec-averses-de-neige-faible-big-png{background-position:-680px -272px;height:125px;width:125px}
+.condition-nuit-avec-averses-de-neige-faible-png{background-position:-816px -448px;height:45px;width:45px}
+.condition-nuit-avec-averses-png{background-position:-928px -392px;height:45px;width:45px}
+.condition-nuit-avec-developpement-nuageux-big-png{background-position:-544px -272px;height:125px;width:125px}
+.condition-nuit-avec-developpement-nuageux-png{background-position:-872px -392px;height:45px;width:45px}
+.condition-nuit-bien-degagee-big-png{background-position:-408px -272px;height:125px;width:125px}
+.condition-nuit-bien-degagee-png{background-position:-816px -392px;height:45px;width:45px}
+.condition-nuit-claire-big-png{background-position:-272px -272px;height:125px;width:125px}
+.condition-nuit-claire-et-stratus-big-png{background-position:-136px -272px;height:125px;width:125px}
+.condition-nuit-claire-et-stratus-png{background-position:-928px -336px;height:45px;width:45px}
+.condition-nuit-claire-png{background-position:-872px -336px;height:45px;width:45px}
+.condition-nuit-faiblement-orageuse-png{background-position:-816px -336px;height:45px;width:45px}
+.condition-nuit-faiblement-orageuse_big-png{background-position:0 -272px;height:125px;width:125px}
+.condition-nuit-legerement-voilee-big-png{background-position:-680px -136px;height:125px;width:125px}
+.condition-nuit-legerement-voilee-png{background-position:-928px -280px;height:45px;width:45px}
+.condition-nuit-nuageuse-big-png{background-position:-544px -136px;height:125px;width:125px}
+.condition-nuit-nuageuse-png{background-position:-872px -280px;height:45px;width:45px;}
+.condition-orage-modere-big-png{background-position:-408px -136px;height:125px;width:125px}
+.condition-orage-modere-png{background-position:-816px -280px;height:45px;width:45px}
+.condition-pluie-et-neige-melee-big-png{background-position:-272px -136px;height:125px;width:125px}
+.condition-pluie-et-neige-melee-faible-big-png{background-position:-136px -136px;height:125px;width:125px}
+.condition-pluie-et-neige-melee-faible-png{background-position:-928px -224px;height:45px;width:45px}
+.condition-pluie-et-neige-melee-forte-big-png{background-position:0 -136px;height:125px;width:125px}
+.condition-pluie-et-neige-melee-forte-png{background-position:-872px -224px;height:45px;width:45px}
+.condition-pluie-et-neige-melee-moderee-big-png{background-position:-680px 0;height:125px;width:125px}
+.condition-pluie-et-neige-melee-moderee-png{background-position:-816px -224px;height:45px;width:45px}
+.condition-pluie-et-neige-melee-png{background-position:-928px -168px;height:45px;width:45px}
+.condition-pluie-faible-big-png{background-position:-544px 0;height:125px;width:125px}
+.condition-pluie-faible-png{background-position:-872px -168px;height:45px;width:45px}
+.condition-pluie-forte-big-png{background-position:-408px 0;height:125px;width:125px}
+.condition-pluie-forte-png{background-position:-816px -168px;height:45px;width:45px}
+.condition-pluie-moderee-big-png{background-position:-272px 0;height:125px;width:125px}
+.condition-pluie-moderee-png{background-position:-952px -112px;height:45px;width:45px}
+.condition-stratus-big-png{background-position:-136px 0;height:125px;width:125px}
+.condition-stratus-png{background-position:-952px -56px;height:45px;width:45px}
+.condition-stratus-se-dissipant-big-png{background-position:0 0;height:125px;width:125px}
+.condition-stratus-se-dissipant-png{background-position:-952px 0;height:45px;width:45px}
+
+
+
+
+/*
+// Extra small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+ }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+    body {background-color: lightslategrey;}
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {  }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {  }*/
