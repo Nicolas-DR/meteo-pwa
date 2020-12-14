@@ -230,7 +230,7 @@ navigator.geolocation.getCurrentPosition(function(position){
 
 $("#villemenu").change(function() {
   var ville = $("#villemenu").val();
-  console.log(ville);
+//  console.log(ville);
   loadmeteo(ville);
 });
 
