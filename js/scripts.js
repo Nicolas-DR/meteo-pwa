@@ -1,6 +1,3 @@
-$(document).ready(function(){  
-
-
 
 
 
@@ -123,7 +120,66 @@ $(document).ready(function(){
    
     
     
+    function loadmeteo(ville) {
+
+      var url2 = "https://www.prevision-meteo.ch/services/json/"+ville;
     
+      $.ajax( {
+          url: url2,
+    
+          method: "GET",
+          dataType : "json",
+    
+          success:function(monObjet2) {
+    
+              console.log(monObjet2);
+    
+              $("h1").html("Météo de "+monObjet2.city_info.name+", "+monObjet2.city_info.country);
+              $(".daycurrent .condition2").html(monObjet2.current_condition.condition);
+              $(".daycurrent #img").attr("src", "img/condition.png");
+              $(".daycurrent #img").attr("class", "condition condition-"+monObjet2.current_condition.condition_key+"-big-png");
+              $(".daycurrent .date").html(monObjet2.current_condition.date);
+              $(".daycurrent .temperature").html("<p>"+monObjet2.current_condition.tmp+" °C</p>");
+    
+              $(".day1 .condition2").html(monObjet2.fcst_day_1.condition);
+              $(".day1 #img").attr("src", "img/condition.png");
+              $(".day1 #img").attr("class", "condition condition-"+monObjet2.fcst_day_1.condition_key+"-big-png");
+              $(".day1 .date").html(monObjet2.fcst_day_1.day_long+" "+monObjet2.fcst_day_1.date);
+              $(".day1 .temperaturemaxmin").html("<p>Entre "+monObjet2.fcst_day_1.tmax+" et "+monObjet2.fcst_day_1.tmin+" °C</p>");
+              $("#togg1").html(monObjet2.fcst_day_1.day_long);
+    
+              $(".day2 .condition2").html(monObjet2.fcst_day_2.condition);
+              $(".day2 #img").attr("src", "img/condition.png");
+              $(".day2 #img").attr("class", "condition condition-"+monObjet2.fcst_day_2.condition_key+"-big-png");
+              $(".day2 .date").html(monObjet2.fcst_day_2.day_long+" "+monObjet2.fcst_day_2.date);
+              $(".day2 .temperaturemaxmin").html("<p>Entre "+monObjet2.fcst_day_2.tmax+" et "+monObjet2.fcst_day_2.tmin+" °C</p>");
+              $("#togg2").html(monObjet2.fcst_day_2.day_long);
+    
+              $(".day3 .condition2").html(monObjet2.fcst_day_3.condition);
+              $(".day3 #img").attr("src", "img/condition.png");
+              $(".day3 #img").attr("class", "condition condition-"+monObjet2.fcst_day_3.condition_key+"-big-png");
+              $(".day3 .date").html(monObjet2.fcst_day_3.day_long+" "+monObjet2.fcst_day_3.date);
+              $(".day3 .temperaturemaxmin").html("<p>Entre "+monObjet2.fcst_day_3.tmax+" et "+monObjet2.fcst_day_3.tmin+" °C</p>");
+              $("#togg3").html(monObjet2.fcst_day_3.day_long);
+    
+              $(".day4 .condition2").html(monObjet2.fcst_day_4.condition);
+              $(".day4 #img").attr("src", "img/condition.png");
+              $(".day4 #img").attr("class", "condition condition-"+monObjet2.fcst_day_4.condition_key+"-big-png");
+              $(".day4 .date").html(monObjet2.fcst_day_4.day_long+" "+monObjet2.fcst_day_4.date);
+              $(".day4 .temperaturemaxmin").html("<p>Entre "+monObjet2.fcst_day_4.tmax+" et "+monObjet2.fcst_day_4.tmin+" °C</p>");
+              $("#togg4").html(monObjet2.fcst_day_4.day_long);
+    
+              $("#villemenu").attr("placeholder",ville);
+              
+    
+              
+              
+    
+          }//fin success2
+      }); //fin ajax2
+    
+    
+    } // function loadmeteo
 
 
 
@@ -155,63 +211,9 @@ navigator.geolocation.getCurrentPosition(function(position){
         //ville v2
         
         var ville = monObjet.address.town;
-        console.log(ville);
-
-        var url2 = "https://www.prevision-meteo.ch/services/json/"+ville;
-
-        $.ajax( {
-            url: url2,
-
-            method: "GET",
-            dataType : "json",
-
-            success:function(monObjet2) {
-
-                console.log(monObjet2);
-
-                $("h1").append(monObjet2.city_info.name+", "+monObjet2.city_info.country);
-                $(".daycurrent .condition2").html(monObjet2.current_condition.condition);
-                $(".daycurrent #img").attr("src", "img/condition.png");
-                $(".daycurrent #img").attr("class", "condition condition-"+monObjet2.current_condition.condition_key+"-big-png");
-                $(".daycurrent .date").html(monObjet2.current_condition.date);
-                $(".daycurrent .temperature").html("<p>"+monObjet2.current_condition.tmp+" °C</p>");
-
-                $(".day1 .condition2").html(monObjet2.fcst_day_1.condition);
-                $(".day1 #img").attr("src", "img/condition.png");
-                $(".day1 #img").attr("class", "condition condition-"+monObjet2.fcst_day_1.condition_key+"-big-png");
-                $(".day1 .date").html(monObjet2.fcst_day_1.day_long+" "+monObjet2.fcst_day_1.date);
-                $(".day1 .temperaturemaxmin").html("<p>Entre "+monObjet2.fcst_day_1.tmax+" et "+monObjet2.fcst_day_1.tmin+" °C</p>");
-                $("#togg1").html(monObjet2.fcst_day_1.day_long);
-
-                $(".day2 .condition2").html(monObjet2.fcst_day_2.condition);
-                $(".day2 #img").attr("src", "img/condition.png");
-                $(".day2 #img").attr("class", "condition condition-"+monObjet2.fcst_day_2.condition_key+"-big-png");
-                $(".day2 .date").html(monObjet2.fcst_day_2.day_long+" "+monObjet2.fcst_day_2.date);
-                $(".day2 .temperaturemaxmin").html("<p>Entre "+monObjet2.fcst_day_2.tmax+" et "+monObjet2.fcst_day_2.tmin+" °C</p>");
-                $("#togg2").html(monObjet2.fcst_day_2.day_long);
-
-                $(".day3 .condition2").html(monObjet2.fcst_day_3.condition);
-                $(".day3 #img").attr("src", "img/condition.png");
-                $(".day3 #img").attr("class", "condition condition-"+monObjet2.fcst_day_3.condition_key+"-big-png");
-                $(".day3 .date").html(monObjet2.fcst_day_3.day_long+" "+monObjet2.fcst_day_3.date);
-                $(".day3 .temperaturemaxmin").html("<p>Entre "+monObjet2.fcst_day_3.tmax+" et "+monObjet2.fcst_day_3.tmin+" °C</p>");
-                $("#togg3").html(monObjet2.fcst_day_3.day_long);
-
-                $(".day4 .condition2").html(monObjet2.fcst_day_4.condition);
-                $(".day4 #img").attr("src", "img/condition.png");
-                $(".day4 #img").attr("class", "condition condition-"+monObjet2.fcst_day_4.condition_key+"-big-png");
-                $(".day4 .date").html(monObjet2.fcst_day_4.day_long+" "+monObjet2.fcst_day_4.date);
-                $(".day4 .temperaturemaxmin").html("<p>Entre "+monObjet2.fcst_day_4.tmax+" et "+monObjet2.fcst_day_4.tmin+" °C</p>");
-                $("#togg4").html(monObjet2.fcst_day_4.day_long);
-
-                $("#villemenu").attr("placeholder","Ta ville");
-
-                
-                
-
-            }//fin success2
-        }); //fin ajax2
-
+       // console.log(ville);
+        loadmeteo(ville);
+        
 
 
         } //success
@@ -220,7 +222,62 @@ navigator.geolocation.getCurrentPosition(function(position){
         
       
           
+}); // geo loc
+
+
+
+
+
+$("#villemenu").change(function() {
+  var ville = $("#villemenu").val();
+  console.log(ville);
+  loadmeteo(ville);
 });
 
- 
-}); // document ready
+
+
+
+$(".reset").click(function() {
+
+  navigator.geolocation.getCurrentPosition(function(position){
+
+    //console.log(position);
+
+    var lat = position.coords.latitude;
+    var lng = position.coords.longitude;
+
+        //console.log("Lat: "+lat+" Lng: "+lng);
+
+
+        var url = "https://us1.locationiq.com/v1/reverse.php?key=pk.30406496b6f50b1928a35ec88c2d7371&format=json&lat="+lat+"&lon="+lng;
+
+        $.ajax( {
+            url: url,
+
+        method: "GET",
+        dataType : "json",
+
+        success:function(monObjet) {
+        
+
+        //ville v1
+        //console.log(monObjet.address.town);
+
+        //ville v2
+        
+        var ville = monObjet.address.town;
+       // console.log(ville);
+        loadmeteo(ville);
+        
+        
+
+
+        } //success
+        }); //ajax
+
+        
+      
+          
+}); // geo loc
+
+});

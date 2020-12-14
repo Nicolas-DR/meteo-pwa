@@ -1,9 +1,9 @@
 {
-    "short_name":"Météo",
-    "name":"Météo Nicolas",
-    "description":"Météo d'europe",
+    "short_name":"Meteo",
+    "name":"Meteo Nicolas",
+    "description":"Meteo en europe",
     "icons":[{
-        "src":"/img/icon.png",
+        "src":"img/icon.png",
         "type":"image/png",
         "sizes":"512x512",
         "purpose":"any maskable"
