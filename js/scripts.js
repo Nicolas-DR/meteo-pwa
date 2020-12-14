@@ -238,6 +238,7 @@ $("#villemenu").change(function() {
 
 
 $(".reset").click(function() {
+$("#villemenu").val("");
 
   navigator.geolocation.getCurrentPosition(function(position){
 
