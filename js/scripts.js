@@ -132,7 +132,7 @@
     
           success:function(monObjet2) {
     
-              console.log(monObjet2);
+              //console.log(monObjet2);
     
               $("h1").html("Météo de "+monObjet2.city_info.name+", "+monObjet2.city_info.country);
               $(".daycurrent .condition2").html(monObjet2.current_condition.condition);
