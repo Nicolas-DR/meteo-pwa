@@ -25,12 +25,6 @@ body {background-image: url(../img/fondclair3.png);
     image-rendering: pixelated;
     z-index: 4;}
 
-/*#cadre {    position: absolute;
-    z-index: 800;
-    width: 100%;
-    bottom: 43px;
-    border-bottom: solid 2px #5FA619;}*/
-
 .haut {text-align: center;
     color: white;
     z-index: 10;
@@ -50,14 +44,10 @@ body {background-image: url(../img/fondclair3.png);
     border-top: solid 2px #5FA619}
 
 .contenu {margin-top: 10px;
-//    background-color: #343A40;
- //   border-bottom: solid 5px #1E2124;
     width: 90%;
     color: white;
     margin: auto;
- //   border-top: solid 1px #1E2124;
-  //  border-left: solid 1px #1E2124;
- //   border-right: solid 1px #1E2124;
+
 p,h2,h3 {margin: 10px;
 }
 p {margin:10px 20px;
@@ -78,12 +68,9 @@ p {margin:10px 20px;
         border: 0;
         color: white;}
 
-
 #d0, #d1, #d2, #d3, #d4 {position: relative;z-index: 2;}
 #d1, #d2, #d3, #d4 {
 display: none;}
-
-
 
 .container {background-color: white;
     min-height: 100vh;
@@ -92,11 +79,7 @@ display: none;}
 background-color: gray;
 color: white;
 text-align: center;
-
-}
-
-}
-
+}}
 
 .condition,.condition-obs{background:url(../img/condition.png) no-repeat;}
 .condition-averses-de-neige-faible-big-png{background-position:-816px 0;height:125px;width:125px}
@@ -174,28 +157,8 @@ text-align: center;
 .condition-stratus-se-dissipant-big-png{background-position:0 0;height:125px;width:125px}
 .condition-stratus-se-dissipant-png{background-position:-952px 0;height:45px;width:45px}
 
-
 .form-control:focus {
     width: inherit;}
 
-
-
-
-/*
-// Extra small devices (portrait phones, less than 576px)
-// No media query for `xs` since this is the default in Bootstrap
-
-// Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) {
- }
-
-// Medium devices (tablets, 768px and up)
-@media (min-width: 768px) {
-    body {background-color: lightslategrey;}
-}
-
-// Large devices (desktops, 992px and up)
-@media (min-width: 992px) {  }
-
-// Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) {  }*/
+button {height: 48px;}
+    
